@@ -8,24 +8,51 @@ body
     overflow: hidden;
 }
 
+.Envelope-Image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.Envelope {
+    background-color: antiquewhite;
+    width: 80%;
+    margin: 50px auto;
+    transition: all 1s ease;
+    z-index: 1;
+    height: 200px;
+}
+
+.Envelope-Text{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgba(27, 27, 27, 1);
+    text-align: center;
+    transition: opacity 0.5s ease;
+}
+
 .Header{
-    background-color: #3e0b39;
+    background-color: #df8cd6;
     color: white;
-    padding: 30px;
+    padding: 175px 15px 15px 15px; 
     margin: 0px;
+    margin-top: 30px;
     text-align: center;
     font-size: 48px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    transition: all 1s ease;
+    height: 20%;
 }
 
 .buttons{
-    margin-top: 50px;   
     gap: 20px;
 }
 
 .buttons div{
-    margin-top: 20px;
+     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,11 +67,12 @@ body
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    transition: all 0.3s ease;
 }
 
 #yes-button{
     background-color: #4CAF50;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+
 }
 
 #yes-button:hover{
@@ -58,6 +86,7 @@ body
     /* position: absolute; */
     white-space: nowrap;
     transition: all 0.1s ease-in-out;
+    z-index: 3;
 }
 
 #no-button:hover{
@@ -65,9 +94,11 @@ body
 }
 
 .message{
-    margin: 15px 15px;
-    font-size: 62px;
+    margin: 20% 15%;
+    font-size: 0px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: #333;
+    color: rgba(27, 27, 27, 1);
+    text-align: center;
+    transition: all 0.3s ease;
 }
