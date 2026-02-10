@@ -1,1 +1,1 @@
-A side project to help my friend to confesss to her valentine
+A side project to help my friend to confesss to his valentine
