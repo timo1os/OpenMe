@@ -43,6 +43,6 @@ function celebrate()
 
     jsConfetti.addConfetti({emojis : ['🎉', '✨', '💖', '💘' , '💗', '🐈', '💐']}).
     then(() => {
-        text.style.fontSize = '48px' 
+        text.style.fontSize = '36px' 
     });
 }

@@ -40,7 +40,7 @@ body
     margin: 0px;
     margin-top: 30px;
     text-align: center;
-    font-size: 6vb;
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: all 1s ease;
@@ -52,7 +52,7 @@ body
 }
 
 .buttons div{
-     margin-top: 20px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
