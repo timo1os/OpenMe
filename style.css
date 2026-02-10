@@ -63,3 +63,11 @@ body
 #no-button:hover{
     background-color: #f77b6c;
 }
+
+.message{
+    margin: 15px 15px;
+    font-size: 62px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333;
+}

@@ -1,5 +1,8 @@
 const nobutton = document.getElementById('no-button')
 const yesbutton = document.getElementById('yes-button')
+const canvas = document.getElementById('confetti-canvas')
+const text = document.getElementsByClassName('message')[0]
+const jsConfetti = new JSConfetti();
 const offset = 300
 
 nobutton.addEventListener('click', moveButton)
@@ -15,5 +18,8 @@ function moveButton(){
 
 function celebrate()
 {
-
+    jsConfetti.addConfetti({emojis : ['🎉', '✨', '💖', '💗', '🐈', '💐']}).
+    then(() => {
+        text.textContent = 'I love your feet 🐾'
+    });
 }
