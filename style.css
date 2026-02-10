@@ -3,6 +3,9 @@ body
     background-color: #E6D7E6;
     margin: 0px;
     padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .Header{
@@ -16,37 +19,47 @@ body
     font-weight: 500;
 }
 
-.Buttons{
-    display: flex;
-    justify-content: center;
+.buttons{
     margin-top: 50px;   
-    gap: 40px;
+    gap: 20px;
 }
 
-.Buttons button{
+.buttons div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
     color: white;
     border: none;
     padding: 15px 30px;
     font-size: 40px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.yes-button button{
+#yes-button{
     background-color: #4CAF50;
 }
 
-.yes-button button:hover{
+#yes-button:hover{
     background-color: #71d476;
+    font-size: 100px;
+
 }
 
-.no-button button{
+#no-button{
     background-color: #f44336;
+    /* position: absolute; */
+    white-space: nowrap;
+    transition: all 0.1s ease-in-out;
 }
 
-.no-button button:hover{
+#no-button:hover{
     background-color: #f77b6c;
 }
