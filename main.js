@@ -20,6 +20,6 @@ function celebrate()
 {
     jsConfetti.addConfetti({emojis : ['🎉', '✨', '💖', '💗', '🐈', '💐']}).
     then(() => {
-        text.textContent = 'I love your feet 🐾'
+        text.textContent = 'I love you 💖'          
     });
 }
