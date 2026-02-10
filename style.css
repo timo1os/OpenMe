@@ -1,0 +1,52 @@
+body
+{
+    background-color: #E6D7E6;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Header{
+    background-color: #3e0b39;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;   
+    gap: 40px;
+}
+
+.Buttons button{
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.yes-button button{
+    background-color: #4CAF50;
+}
+
+.yes-button button:hover{
+    background-color: #71d476;
+}
+
+.no-button button{
+    background-color: #f44336;
+}
+
+.no-button button:hover{
+    background-color: #f77b6c;
+}
