@@ -2,9 +2,15 @@ const nobutton = document.getElementById('no-button')
 const yesbutton = document.getElementById('yes-button')
 const canvas = document.getElementById('confetti-canvas')
 const envelopeCover = document.getElementsByClassName('Envelope-Image')[0]
-const offset = 300
+let noFontSize = parseInt(window.getComputedStyle(nobutton).fontSize, 10)
+let yesButtonSize = parseInt(window.getComputedStyle(yesbutton).fontSize, 10)
 
-nobutton.addEventListener('click', moveButton)
+
+nobutton.addEventListener('click', makeButtonSmaller)
+yesbutton.addEventListener('mouseenter', () => {
+    yesbutton.style.fontSize = yesButtonSize + 30 + 'px'})
+yesbutton.addEventListener('mouseleave', () => {
+        yesbutton.style.fontSize = yesButtonSize + 'px'})
 yesbutton.addEventListener('click', celebrate)
 envelopeCover.addEventListener('click', openEnvelope)
 
@@ -25,15 +31,18 @@ function openEnvelope()
         child.style.transition = 'opacity 0.5s ease-in-out'
         child.style.opacity = '1'
     }
-    envelope.style.height = '500px'
+    envelope.style.height = 'auto'
 }
 
-function moveButton(){
-    nobutton.style.position = 'absolute'
-    var x = Math.floor(Math.random() * (window.innerWidth - offset))
-    var y = Math.floor(Math.random() * (window.innerHeight - offset))
-    nobutton.style.left = `${x}px`
-    nobutton.style.top = `${y}px`
+function makeButtonSmaller(){
+    noFontSize -= 10
+    nobutton.style.fontSize = noFontSize + 'px'
+    yesButtonSize += 10
+    console.log(yesButtonSize)
+    yesbutton.style.fontSize = yesButtonSize + 'px'
+    if(noFontSize <= 0){
+        nobutton.style.opacity = '0'
+    }
 }
 
 function celebrate()

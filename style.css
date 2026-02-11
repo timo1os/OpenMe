@@ -9,15 +9,17 @@ body
 }
 
 .Envelope-Image{
-    width: 100%;
+    width: 300px;
     height: auto;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
 }
 
 .Envelope {
     background-color: antiquewhite;
-    width: 80%;
+    width: 280px;
     margin: 50px auto;
     transition: all 1s ease;
     z-index: 1;
@@ -36,15 +38,14 @@ body
 .Header{
     background-color: #df8cd6;
     color: white;
-    padding: 175px 15px 15px 15px; 
+    padding: 120px 15px 15px 15px; 
     margin: 0px;
-    margin-top: 30px;
     text-align: center;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: all 1s ease;
-    height: 20%;
+    height: 15%;
 }
 
 .buttons{
@@ -75,16 +76,15 @@ body
 
 }
 
-#yes-button:hover{
+/* #yes-button:hover{
     background-color: #71d476;
     font-size: 100px;
 
-}
+} */
 
 #no-button{
     background-color: #f44336;
     /* position: absolute; */
-    white-space: nowrap;
     transition: all 0.1s ease-in-out;
     z-index: 3;
 }
