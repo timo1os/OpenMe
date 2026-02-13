@@ -35,7 +35,7 @@ function openEnvelope()
 }
 
 function makeButtonSmaller(){
-    noFontSize -= 10
+    noFontSize -= 5
     nobutton.style.fontSize = noFontSize + 'px'
     yesButtonSize += 10
     console.log(yesButtonSize)
